@@ -2,6 +2,7 @@
   "name": "ngx-signal-store",
   "version": "1.0.0",
   "description": "Lightweight Angular 21+ state management powered by native Signals",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -11,7 +12,10 @@
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
     "angular",
@@ -35,6 +39,7 @@
     "@angular/core": "^21.0.0",
     "typescript": "~5.8.0",
     "vitest": "^3.1.0",
-    "zone.js": "^0.15.0"
+    "zone.js": "^0.15.0",
+    "vitepress": "^1.6.0"
   }
 }
